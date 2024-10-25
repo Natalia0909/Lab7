@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/style.css">
+   <link rel="stylesheet" href="./style/jquery-ui.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+
+   <title>Oksana Turetska</title>
+</head>
+<body id="Head">
+
+   <header class="heaader_top">
+      <h1 class="header__text">Oksana Turetska</h1>
+      <nav>
+         <a href="#Head">Головна</a>
+         <a href="#posl">Послуги</a>
+         <a href="#portfolio">Портфоліо</a>
+         <a href="#map">Розташування</a>
+      </nav>
+   </header>
+
+   <div class="contain">
+      <section id="posl">
+         <h1 class="contain_posl">Послуги</h1>   
+         <div id="accordion">
+            <h2>Індивідуальне пошиття жіночого одягу</h2>
+            <div>
+            <p class="text_ac">
+               Створення унікальних виробів, повністю адаптованих до ваших побажань та параметрів. Підбір фасону, тканини і деталей для створення одягу.
+            </p>
+            </div>
+            <h2>Конструювання лекал в PDF форматі</h2>
+            <div>
+            <p class="text_ac">
+               Розробка точних викрійок для шиття, які надаються в зручному PDF форматі. Можливість замовлення викрійок на індивідуальні мірки для подальшого використання.
+            </p>
+            </div>
+            <h2>Консультація</h2>
+            <div>
+            <p class="text_ac">
+               Професійні рекомендації щодо підбору матеріалів для вашого проєкту. Допомога у виборі тканин, фурнітури та інших елементів, що відповідають вашому стилю та потребам виробу.
+            </p>
+            </div>
+         </div>
+      </section>
+      <section id="portfolio">
+         <h1 class="contain_posl">Портфоліо</h1>
+         <div class="owl-carousel owl-theme">
+            <div class="item"> <img src="./images/костюм.webp" alt="костюм"> </div>
+            <div class="item"> <img src="./images/пальто.webp" alt="пальто"> </div>
+            <div class="item"> <img src="./images/піджак.jpg" alt="піджак"> </div>
+            <div class="item"> <img src="./images/Спідниця.webp" alt="Спідниця"> </div>
+            <div class="item"> <img src="./images/футболка.jpg" alt="футболка"> </div>
+            <div class="item"> <img src="./images/футболка2.jpg" alt="футболка"> </div>
+            <div class="item"> <img src="./images/худі.jpg" alt="худі"> </div>
+          </div>
+      </section>
+      <div>
+         <section id="map">
+            <h1 class="contain_posl">Розташування</h1>
+            <div class="butm">
+               <p class="date">Date: <input type="text" id="datepicker"></p>
+               <a class="popup-gmaps" href="https://www.google.com.ua/maps/place/%D0%97%D0%BE%D0%BB%D0%BE%D1%87%D0%B5%D0%B2,+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+80700/@49.8061796,24.875916,14z/data=!4m6!3m5!1s0x473007fcdf1dbefd:0x68d7724e21006816!8m2!3d49.80941!4d24.901371!16zL20vMDQ0cHBo?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Відкрити у гугл картах</a>
+            </div>
+            <style>
+               /**
+               * Simple fade transition,
+               */
+               .mfp-fade.mfp-bg {
+                  opacity: 0;
+                  -webkit-transition: all 0.15s ease-out; 
+                  -moz-transition: all 0.15s ease-out; 
+                  transition: all 0.15s ease-out;
+               }
+               .mfp-fade.mfp-bg.mfp-ready {
+                  opacity: 0.8;
+               }
+               .mfp-fade.mfp-bg.mfp-removing {
+                  opacity: 0;
+               }
+
+               .mfp-fade.mfp-wrap .mfp-content {
+                  opacity: 0;
+                  -webkit-transition: all 0.15s ease-out; 
+                  -moz-transition: all 0.15s ease-out; 
+                  transition: all 0.15s ease-out;
+               }
+               .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+                  opacity: 1;
+               }
+               .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+                  opacity: 0;
+               }
+            </style>
+         </section>
+      </div>
+   </div>
+   <script src="./js/jquery.js"></script>
+   <script src="./js/jquery-ui.js"></script>
+
+   <!-- посилання -->
+   <link rel="stylesheet" href="magnific-popup/magnific-popup.css">   
+   <script src="magnific-popup/jquery.magnific-popup.js"></script>
+   <script>
+      $(document).ready(function() {
+         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+      
+            fixedContentPos: false
+         });
+      });
+   </script>
+<!-- Карусель -->
+   <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+   <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+   <script src="owlcarousel/owl.carousel.js"></script>
+   <script>
+      $(".owl-carousel").owlCarousel({
+         loop:true,
+         autoWidth:true,
+         autoplay:true,
+         autoplayTimeout:1000,
+         nav:true,
+         autoplayHoverPause:true,
+         responsive:{
+            0:{
+               items:1
+            },
+            600:{
+               items:3
+            },
+
+            1000:{
+               items:5
+            }
+         }
+      })
+
+   </script>
+
+   <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+      </script>
+
+   <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      </script>
+</body>
+</html>
